@@ -1,0 +1,9 @@
+<ion-radio-group #iongroup id="startTime" (change)="radioGroupChange()">
+  <ion-item (click)="radioSelect(a_device)" *ngFor="let a_device of added_device">
+    <ion-label>{{a_device.nickname}}({{a_device.address}})</ion-label>
+    <ion-radio *ngIf="currentDeviceID == a_device.gid"  checked slot="end"  value="{{a_device.gid}}"></ion-radio>
+    <ion-radio *ngIf="currentDeviceID != a_device.gid"   slot="end"  value="{{a_device.gid}}"></ion-radio>
+  
+</ion-item>
+ 
+</ion-radio-group>

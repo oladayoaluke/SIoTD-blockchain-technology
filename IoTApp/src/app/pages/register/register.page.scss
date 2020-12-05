@@ -1,0 +1,77 @@
+:host {
+    ion-toolbar {
+        width: 100%;
+        --background: transparent;
+        height: 41px;
+        align-content: center;
+        align-items: center;
+        color: #ffffff;
+        margin-top: 15px;
+    }
+    ion-title {
+        font-size: 34px;
+        font-weight: bolder;
+        height: 41px;
+        line-height: 41px;
+        // width: 110px;
+        color: #FFFFFF;
+        font-family: "S F Pro Display";
+    }
+    ion-header {
+        height: 80px;
+        text-align: center;
+    }
+    .back-icon {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        z-index: 1000;
+    }
+    ion-content {
+        width: 100%;
+        --background: transparent;
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        padding-top: 5%;
+        margin-top: 20px;
+        justify-content: center;
+        align-content: space-around;
+    }
+    ion-footer {
+        height: 100px;
+    }
+    ion-footer ion-button {
+        width: 121px;
+        height: 51px;
+    }
+    ion-label {
+        color: #ffffff;
+        font-size: 18px;
+        height: 31px;
+        font-family: 'S F Pro Display';
+        display: flex;
+    }
+    ion-input {
+        color: #ffffff;
+        font-size: 20px;
+        height: 31px;
+        display: flex;
+        font-family: 'S F Pro Display';
+        border: 1px solid #FFFFFF;
+        width: 239px;
+        height: 36px;
+    }
+    .form_errors {
+        text-align: center;
+        margin: 5px auto;
+        color: red;
+        font-weight: bold;
+        border: 1px solid red;
+        width: 100%;
+        height: 100p;
+        padding: 6px;
+    }
+}

@@ -1,0 +1,55 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-icon ios="ios-arrow-back-outline" md="ios-arrow-back" class="back-icon" (click)="go_back()"></ion-icon>
+        <ion-title>SIGIN</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-grid>
+        <!--
+        <ion-row>
+            <ion-col size="3" text-right>
+                <ion-label>Username : </ion-label>
+            </ion-col>
+            <ion-col size="9" text-left>
+                <ion-input type="text" [(ngModel)]="username" oninput="handleUsernameValue(event)" placeholder=""></ion-input>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="3" text-right>
+                <ion-label>Password : </ion-label>
+            </ion-col>
+            <ion-col size="9" text-left>
+                <ion-input type="password" [(ngModel)]="password" oninput="handlePassValue(event)" placeholder=""></ion-input>
+            </ion-col>
+        </ion-row>
+    -->
+    <ion-row>
+            <ion-col size="3" text-right>
+                <ion-label>Username : </ion-label>
+            </ion-col>
+            <ion-col size="9" text-left>
+                <ion-input type="text" [(ngModel)]="username"  placeholder=""></ion-input>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="3" text-right>
+                <ion-label>Password : </ion-label>
+            </ion-col>
+            <ion-col size="9" text-left>
+                <ion-input type="password" [(ngModel)]="password"  placeholder=""></ion-input>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+<ion-footer>
+    <ion-grid>
+        <ion-row>
+            <ion-col text-center>
+                <ion-button type="submit" (click)="SignIn()"  color="danger" class="edit_btn" >Sign In</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>

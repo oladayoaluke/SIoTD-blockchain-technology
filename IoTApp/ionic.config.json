@@ -1,0 +1,7 @@
+{
+  "name": "IonicIoTDevice",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

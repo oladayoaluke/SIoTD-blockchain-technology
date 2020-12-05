@@ -1,0 +1,72 @@
+<ion-header>
+    <ion-grid>
+        <ion-row class="ion-justify-content-between">
+            <ion-label class="current_group-label" text-center>
+                Simulated IoT Device App
+            </ion-label>
+            <ion-icon ios="ios-settings" md="md-settings" routerLink="/setting" routerDirection="root" class="setting-icon"></ion-icon>
+        </ion-row>
+    </ion-grid>
+</ion-header>
+<ion-content justify-content="center">
+    <ion-grid>
+        <!-- ----------------- hederer button part -------------------------- -->
+        <ion-row>
+            <ion-col col-xs-3 text-center>
+                <label class="up_btn_label">Connect</label>
+            </ion-col>
+ 
+            <ion-col col-xs-3 text-center>
+                <label class="up_btn_label">Reset</label>
+            </ion-col>
+            <ion-col col-xs-3 text-center>
+                <label class="up_btn_label">LED(ON/OFF)</label>
+            </ion-col>
+            -->
+        </ion-row>
+        <ion-row>
+            
+            <ion-col size="4" text-center no-padding (click)="StartToggle('start_status',$event)">
+                <ion-icon [ngClass]="{'active_power_on':isStart==true}"  ios="ios-power" md="md-power" class="power-icon"></ion-icon>
+            </ion-col>
+        
+            <ion-col size="4" text-center no-padding (click)="StartToggle('t_switch_status',$event)">
+                <ion-icon [ngClass]="{'t_switch_status':isReset==true}"  ios="ios-power" md="md-power" class="power-icon"></ion-icon>                
+            </ion-col>
+            <ion-col col-xs-3 text-center>
+                <ion-toggle [ngModel]="p_switch_status" (ionChange)="StartToggle('p_switch_status',$event)" color="danger" checked="true" ></ion-toggle>
+            </ion-col>
+        </ion-row>
+        <!-- ----------------- hederer button part end -------------------------- -->
+        <!-- ----------------- error label part -------------------------- -->
+        <ion-row>
+            <ion-col text-center class='error-label'>
+                <ion-label>
+                    offline
+                </ion-label>
+            </ion-col>
+        </ion-row>
+        <!-- ----------------- error label part end-------------------------- -->
+
+        <ion-row></ion-row>
+
+    </ion-grid>
+</ion-content>
+
+
+
+<ion-footer>
+        
+   
+    <ion-grid>
+        <ion-row justify-content-between>
+            <ion-col col-xs-6>
+                <ion-text class="bottom_text">Created By</ion-text>
+            </ion-col>
+            <ion-col col-xs-6>
+                <ion-text class="bottom_text">Oladayo Luke</ion-text>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid> 
+</ion-footer> 

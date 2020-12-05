@@ -1,0 +1,125 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-icon ios="ios-arrow-back-outline" md="ios-arrow-back" class="back-icon" (click)="go_back()"></ion-icon>
+        <ion-title>ADD GROUP</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content justify-content="center">
+ <form [formGroup]="addGroupForm">
+    <ion-grid>
+        
+        <ion-row class="title-row">
+            <ion-col col-xs-3 text-left>
+                <ion-label class="title_label">Group Name</ion-label>
+            </ion-col>
+        </ion-row>
+        <ion-row class="item-row">
+            <ion-col col-xs-3 text-left>
+                <ion-input type="text" formControlName="nickname" placeholder="unique nickname"></ion-input>
+            </ion-col>
+            <div class="form_errors" *ngIf="addGroupForm.get('nickname').hasError('required')&&form_submit">
+                Group Name Is Required<ion-icon name="warning"></ion-icon>
+            </div>
+        </ion-row>
+
+        <!-- 
+
+        <ion-row class="title-row">
+            <ion-col col-xs-3 text-left>
+                <ion-label class="title_label">WiFi Adapter</ion-label>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="group-item">
+            <ion-col size="6" text-left no-padding>
+                <ion-row no-padding>
+                    <ion-col no-padding>
+                        <ion-label class="group-item-label">Select existing WiFi Adapter </ion-label>
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+            <ion-col size="6" text-right no-padding>
+                <ion-item class="ion-select-block">
+                    <ion-select interface="popover" class="zone-range" id="zone-range">
+                        <ion-select-option value="{{item}}" *ngFor="let item of items">{{item}}</ion-select-option>
+                    </ion-select>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="group-item">
+            <ion-col size="7" text-left no-padding>
+                <ion-row no-padding>
+                    <ion-col no-padding>
+                        <ion-label class="group-item-label">Add new wiFi adapter</ion-label>
+                    </ion-col>
+                </ion-row>
+            </ion-col>
+            <ion-col size="4" text-right no-padding>
+                    <a class="new_device_text" routerLink="/adddevice">Add Device</a>
+            </ion-col>
+        </ion-row> 
+        -->
+    
+        <!-- beginning of location form -->
+
+        <ion-row class="title-row">
+            <ion-col col-xs-3 text-left>
+                <ion-label class="title_label">Group Location</ion-label>
+            </ion-col>
+            
+             
+        </ion-row>
+
+        <ion-row class="item-row">
+            <ion-col col-xs-3 text-left>
+                <ion-input type="text" formControlName="address" placeholder="Address"></ion-input>
+            </ion-col>
+            <div class="form_errors" *ngIf="addGroupForm.get('address').hasError('required')&&form_submit">
+                Address Is Required<ion-icon name="warning"></ion-icon>
+            </div>
+        </ion-row>
+        <ion-row class="item-row">
+            <ion-col col-xs-3 text-left>
+                <ion-input type="text" formControlName="city" placeholder="City"></ion-input>
+            </ion-col>
+            <div class="form_errors" *ngIf="addGroupForm.get('city').hasError('required')&&form_submit">
+                City Is Required<ion-icon name="warning"></ion-icon>
+            </div>
+        </ion-row>
+        <ion-row class="item-row">
+            <ion-col col-xs-3 text-left>
+                <ion-input type="text" formControlName="state" placeholder="State"></ion-input>
+            </ion-col>
+            <div class="form_errors" *ngIf="addGroupForm.get('state').hasError('required')&&form_submit">
+                State Is Required<ion-icon name="warning"></ion-icon>
+            </div>
+        </ion-row>
+        <ion-row class="item-row">
+            <ion-col col-xs-3 text-left>
+                <ion-input type="text" formControlName="country" placeholder="Country"></ion-input>
+            </ion-col>
+            <div class="form_errors" *ngIf="addGroupForm.get('country').hasError('required')&&form_submit">
+                Country Is Required<ion-icon name="warning"></ion-icon>
+            </div>
+        </ion-row>
+        <ion-row class="item-row">
+            <ion-col col-xs-3 text-left>
+                <ion-input type="text" formControlName="zipcode" placeholder="Zip Code"></ion-input>
+            </ion-col>
+            <div class="form_errors" *ngIf="addGroupForm.get('zipcode').hasError('required')&&form_submit">
+                Zip Code Is Required<ion-icon name="warning"></ion-icon>
+            </div>
+        </ion-row>
+    </ion-grid>
+</form>
+</ion-content>
+<ion-footer>
+    <ion-grid>
+        <ion-row>
+            <ion-col text-center>
+                <ion-button color="danger" class="add_btn" (click)="AddGroup(addGroupForm.controls)">ADD</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>

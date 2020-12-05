@@ -1,0 +1,57 @@
+{
+    "map": [{
+            "name": "7912 Jasons Landing, Severn, MD",
+            "lat": 39.1315354,
+            "lng": -76.6958981,
+            "center": true
+        },
+        {
+            "name": "7904 Jasons Landing Way, Severn MD",
+            "lat": 39.132560,
+            "lng": -76.696000,
+            "center": true
+        }
+    ],
+
+    "tracks": [{
+            "name": "Angular",
+            "icon": "logo-angular"
+        },
+        {
+            "name": "Documentation",
+            "icon": "document"
+        },
+        {
+            "name": "Food",
+            "icon": "restaurant"
+        },
+        {
+            "name": "Ionic",
+            "icon": "logo-ionic"
+        },
+        {
+            "name": "Tooling",
+            "icon": "hammer"
+        },
+        {
+            "name": "Design",
+            "icon": "color-palette"
+        },
+        {
+            "name": "Services",
+            "icon": "cog"
+        },
+        {
+            "name": "Workshop",
+            "icon": "construct"
+        },
+        {
+            "name": "Communication",
+            "icon": "call"
+        },
+        {
+            "name": "Navigation",
+            "icon": "compass"
+        }
+    ]
+}

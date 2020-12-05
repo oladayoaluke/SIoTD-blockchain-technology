@@ -1,0 +1,23 @@
+:host {
+    ion-content {
+        --background: transparent;
+    }
+    .ion-btn {
+        border-radius: 22px;
+        background-color: #000000 !important;
+        border: 1px solid #FFFFFF;
+        margin-top: 40%;
+    }
+    .sign_label {
+        font-size: 20px;
+        line-height: 41px;
+        color: #FFFFFF;
+        font-family: "S F Pro Display";
+    }
+    .privacy_text {
+        text-decoration: underline;
+    }
+    ion-img {
+        margin-top: 50%
+    }
+}

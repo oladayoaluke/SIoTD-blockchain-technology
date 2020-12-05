@@ -1,0 +1,77 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-icon ios="ios-arrow-back-outline" md="ios-arrow-back" class="back-icon" (click)="go_back()"></ion-icon>
+        <ion-title>SETTINGS</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-grid>
+        <ion-row class="main-control-btn-group">
+            <ion-col col-xs-6 offset-xs-3 text-center>
+                <ion-button justify-content="center" class="ion-btn" routerLink="/addgroup" routerDirection="root" icon-left size="6" expand="" shape="round">
+                    <ion-label size="5" class="sign_label">ADD GROUP</ion-label>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+        <div *ngIf="is_group">
+            <ion-row class="main-control-btn-group">
+                <ion-col col-xs-6 offset-xs-3 text-center>
+                    <ion-button justify-content="center" class="ion-btn" routerLink="/addcategory" routerDirection="root" icon-left size="6" expand="" shape="round">
+                        <ion-label size="5" class="sign_label">ADD CATEGORY</ion-label>
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="main-control-btn-group">
+                <ion-col col-xs-6 offset-xs-3 text-center>
+                    <ion-button justify-content="center" class="ion-btn" routerLink="/adddevice" routerDirection="root" icon-left size="6" expand="" shape="round">
+                        <ion-label size="5" class="sign_label">ADD DEVICE</ion-label>
+                    </ion-button>
+                </ion-col>
+            </ion-row>	
+
+
+            <ion-row class="main-control-btn-group">
+                <ion-col col-xs-6 offset-xs-3 text-center>
+                    <ion-button justify-content="center" class="ion-btn" routerLink="/devices" routerDirection="root" size="6" expand="" shape="round">
+                        <ion-label size="5" class="btn_label">Devices</ion-label>
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+        </div>
+       
+        <ion-row class="main-control-btn-group">
+            <ion-col col-xs-6 offset-xs-3 text-center>
+                <ion-button justify-content="center" class="ion-btn" routerLink="/profile" routerDirection="root" size="6" expand="" shape="round">
+                    <ion-label size="5" class="btn_label">Profile</ion-label>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+        <ion-row class="main-control-btn-group">
+            <ion-col col-xs-6 offset-xs-3 text-center>
+                <ion-button justify-content="center" class="ion-btn" (click)="Logout()"  size="6" expand="" shape="round">
+                    <ion-label size="5" class="btn_label">Sign Out</ion-label>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+<ion-footer>
+    <ion-grid>
+        <ion-row justify-content-center no-padding>
+            <ion-col>
+                <ion-text class="bottom_text">firmware ver 1.0</ion-text>
+            </ion-col>
+        </ion-row>
+        <ion-row justify-content-center no-padding>
+            <ion-col>
+                <ion-text class="bottom_text">March, 2020</ion-text>
+            </ion-col>
+        </ion-row>
+        <ion-row justify-content-center no-padding>
+            <ion-col>
+                <ion-text class="bottom_text">Privacy Policy</ion-text>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>

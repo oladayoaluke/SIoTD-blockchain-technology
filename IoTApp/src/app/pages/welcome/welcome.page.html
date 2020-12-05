@@ -1,0 +1,37 @@
+<ion-content justify-content="center" class="ion-background">
+    <ion-grid>
+        <ion-row align-items-center>
+            <ion-col col-xs-6 offset-xs-3>
+                <ion-img src="../../../assets/car.png"></ion-img>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-xs-6 offset-xs-3 text-center>
+                <ion-button justify-content="center" routerLink="/signin" routerDirection="root" class="ion-btn" icon-left size="medium" expand="" shape="round" color="dark">
+                    <ion-icon name="log-in"></ion-icon>
+                    <label class="sign_label">Sign In</label>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+		
+		<ion-row class="main-control-btn-group">
+            <ion-col col-xs-6 offset-xs-3 text-center>
+				
+                <a class="privacy_text" routerLink="/register">Sign Up</a>
+            </ion-col>
+        </ion-row>
+		
+        <ion-row>
+            <ion-col col-xs-6 offset-xs-3>
+                <p text-center>
+					<a class="privacy_text" routerLink="/privacy">Privacy Policy</a>
+                    <!--
+					<a routerLink="/privacy">Privacy Policy</a>
+					<ion-text color="light" class="privacy_text">
+                        Privacy Policy
+                    </ion-text> -->
+                </p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

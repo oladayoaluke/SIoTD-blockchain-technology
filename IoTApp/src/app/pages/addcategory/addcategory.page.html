@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-icon ios="ios-arrow-back-outline" md="ios-arrow-back" class="back-icon" (click)="go_back()"></ion-icon>
+        <ion-title>ADD CATEGORY</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content justify-content="center">
+ <form [formGroup]="addCategoryForm">
+    <ion-grid>
+        
+        <ion-row class="title-row">
+            <ion-col col-xs-3 text-left>
+                <ion-label class="title_label">Category Name</ion-label>
+            </ion-col>
+        </ion-row>
+        <ion-row class="item-row">
+            <ion-col col-xs-3 text-left>
+                <ion-input type="text" formControlName="nickname" placeholder="unique nickname"></ion-input>
+            </ion-col>
+            <div class="form_errors" *ngIf="addCategoryForm.get('nickname').hasError('required')&&form_submit">
+                Category Name Is Required<ion-icon name="warning"></ion-icon>
+            </div>
+        </ion-row>
+    
+  
+    </ion-grid>
+</form>
+</ion-content>
+<ion-footer>
+    <ion-grid>
+        <ion-row>
+            <ion-col text-center>
+                <ion-button color="danger" class="add_btn" (click)="AddGroup(addCategoryForm.controls)">ADD</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>
