@@ -1,0 +1,561 @@
+|-----------------------------------------------------------------|
+|-----------------------------------------------------------------|
+|--------------------- IOT SIMULATION DEVICE----------------------|
+|-----------------------------------------------------------------|
+|-----------------------------------------------------------------|
+[ARG 1] GROUP NAME      : "A"  #For example, A or B
+[ARG 2] FROM NODE ID    : "1"  #For example, 1, 2,3, or 4
+[ARG 3] TO NODE ID      : "2"  #For example, 2, or 2,3,4 for multiple
+[ARG 4] CATEGORY ID     : "1"  #For example, 1
+[ARG 5] MASTER FLAG     : "0"  #For example, 0 for slave 1 for master
+
+[INFO] Blockchain Object Initializing Begins---Sun Apr 26 13:51:38 2020
+[INFO] Blockchain Account 1 : 0x5d89f6EC46fcF4436c4173ce5e4df66d258751c0
+[INFO] Blockchain Account 2 : 0x7626731D27240EE565829A7E2C09bD0E48d52936
+[INFO] Blockchain Account 3 : 0x0e65DAd820f32e9D0B40CB6E583da4f3574c1801
+[INFO] Blockchain Account 4 : 0xA43C2dD3d8335173AFD9c88f4Ae7Aa272Cc137F6
+[INFO] Blockchain Account 5 : 0xf0e63f256DD284F5338C1c72eFdBB5224e52273b
+[INFO] Blockchain Account 6 : 0x6bC5E9D47D175ffF361d05E21f8596F85Cedf1BB
+[INFO] Blockchain Account 7 : 0xc0B4119bd7C2D5F21c03973Fe96eb3DcDcDfAfeB
+[INFO] Blockchain Account 8 : 0xeC00103Bd8d7437dADed866AB78512330AF284C1
+[INFO] Blockchain Account 9 : 0xbfE0B09fbdB2610944781752e698504fD023785F
+[INFO] Blockchain Account 10 : 0xF9b2c118dDC7F11F537ab68063C667167109FFe5
+[INFO] Blockchain Regis Account : 0x7626731D27240EE565829A7E2C09bD0E48d52936
+[INFO] Blockchain Object Initializing Emds---Sun Apr 26 13:51:38 2020
+[INFO] Blockchain Account : 0x7626731D27240EE565829A7E2C09bD0E48d52936
+[INFO] Blockchain is connected : True
+[INFO] Blockchain Account Balance  : 99438094900000000000
+[INFO] Blockchain Contract Address  : 0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2
+[INFO] Node Master flag is  : 1
+[INFO] Blockchain Private Key  : 0x710b8dcc66a85abc0417b1123fdb8e82ef27a871b3ae4540b3c9ebf91c0535b9
+
+[INFO] Device registration status ------------ 0
+[INFO] Socket Server Listening at 127.0.0.1:65431 
+
+....
+
+[INFO] Blockchain Transaction Begins--------------Sun Apr 26 13:51:48 2020
+
+[INFO] Blockchain Account Balance ----------------99438094900000000000
+[INFO] Blockchain Transaction Ends ----------------Sun Apr 26 13:51:49 2020
+
+[INFO] Blockchain Account Before Balance ----------99438094900000000000
+
+[INFO] Blockchain Registration Begins--------------Sun Apr 26 13:51:49 2020
+[INFO] Blockchain add_node category = 1
+[INFO] Blockchain add_node grpId = 110
+[INFO] Blockchain add_node nodeId = 1
+[INFO] Blockchain add_node groupTicket = 19a97d3741a7861fbdbb21f21869368f
+[INFO] Blockchain add_node groupTicket int = 34110737742783727068050793212204889743
+
+[INFO] Blockchain Signed Transaction Information
+[INFO] r : 53961212034510361901163570409016889022339915768831576742883090402817437964143
+[INFO] r : 53961212034510361901163570409016889022339915768831576742883090402817437964143
+[INFO] s : 27
+[INFO] signature : 0x774cf6b3c500885b9044122376fb9cf228a153f7cc71ddbddeb95b1d25c1976f1d50efb6099137a77dfe24a7b06e036e14dc88d6b66ea851355cce83d49273ff1b
+[INFO] verified signature : 0x7626731D27240EE565829A7E2C09bD0E48d52936
+
+[INFO] Sending transaction to SIoTDSC__AddNode(*) Nonce : 75611. Gas : 585
+
+[INFO]  --------- TRANSACTION RECEIPT BEGINS ------------ 
+AttributeDict({'transactionHash': HexBytes('0xc7596ea63399ff811af517d1da91024b1b2406a8fb5510cc6b727196e9cd2dca'), 'transactionIndex': 0, 'blockHash': HexBytes('0x58797169b4697e86d8d37de30645d3e9028adc62e6ed4543e3b2e2ada87ec708'), 'blockNumber': 1502, 'from': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'to': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'gasUsed': 75611, 'cumulativeGasUsed': 75611, 'contractAddress': None, 'logs': [AttributeDict({'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xc7596ea63399ff811af517d1da91024b1b2406a8fb5510cc6b727196e9cd2dca'), 'blockHash': HexBytes('0x58797169b4697e86d8d37de30645d3e9028adc62e6ed4543e3b2e2ada87ec708'), 'blockNumber': 1502, 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'data': '0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000007626731d27240ee565829a7e2c09bd0e48d52936000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000036536d61727420436f6e74726163742853496f5444534329204164644e6f6465205472616e73616374696f6e20436f6d706c657465642100000000000000000000', 'topics': [HexBytes('0xeae353f1679a07ffd0b2e7bd40bf60a4043ec74ab74ed16acf4131212c83f57d')], 'type': 'mined'})], 'status': 1, 'logsBloom': HexBytes('0x00800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000004000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000')})
+[INFO]  --------- TRANSACTION RECEIPT ENDS   -------------- 
+
+[INFO]  --------- TRANSACTION LOGS BEGINS --------------- 
+(AttributeDict({'args': AttributeDict({'id': 1, 'owner': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'message': 'Smart Contract(SIoTDSC) AddNode Transaction Completed!', 'status': True}), 'event': 'TransactionCompleted', 'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xc7596ea63399ff811af517d1da91024b1b2406a8fb5510cc6b727196e9cd2dca'), 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'blockHash': HexBytes('0x58797169b4697e86d8d37de30645d3e9028adc62e6ed4543e3b2e2ada87ec708'), 'blockNumber': 1502}),)
+[INFO]  --------- TRANSACTION LOGS ENDS   ----------------- 
+
+[INFO] Message : Smart Contract(SIoTDSC) AddNode Transaction Completed!
+
+[INFO] Node Registered Successfully. Transaction Receipt Status  : 1
+
+[INFO] Blockchain Registration Ends----------------Sun Apr 26 13:51:53 2020
+
+[INFO] Blockchain Account After Balance -----------99436582680000000000
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@########################################################################@
+@######################## SIoTD_A LED   #################################@
+@########################################################################@
+@###########             #####      ########   ##########################@
+@###########   #######   #####   ###  ######   ##########################@
+@###########   #######   #####   ####  #####   ##########################@
+@###########   #######   #####   #####  ####   ##########################@
+@###########   #######   #####   ######  ###   ##########################@
+@###########   #######   #####   #######  ##   ##########################@
+@###########   #######   #####   ########  #   ##########################@
+@###########             #####   #########     ##########################@
+@########################################################################@
+@########################################################################@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+[INFO] SEND: led_state : 1, out : turn off led, send_status : 1
+[INFO]-------------------------SENDING-----------------------turn off led
+
+[INFO] Sending Blockchain Message -----------------Sun Apr 26 13:51:54 2020
+
+[INFO] Blockchain Account Before Balance ----------99436582680000000000
+
+[INFO] Blockchain Registration Begins--------------Sun Apr 26 13:51:55 2020
+[INFO] Blockchain send_MSG sender     = 1
+[INFO] Blockchain send_MSG receiver   = 2
+[INFO] Blockchain send_MSG _message   = turn off led
+[INFO] Blockchain send_MSG grpTicket  = 19a97d3741a7861fbdbb21f21869368f
+[INFO] Blockchain send_MSG Ticket int = 34110737742783727068050793212204889743
+[INFO] Blockchain Signed Transaction Information
+[INFO] r : 50988073157098198205699417718934358077357516805321390284349372902826737107552
+[INFO] r : 50988073157098198205699417718934358077357516805321390284349372902826737107552
+[INFO] s : 28
+[INFO] signature : b"p\xba:\t\xa8\xfb\x8ez\x83\xc5\x00\x15\x86\xb7\x01\x1a&\xd0q_\xf1\xc1^v\\\x19\xb9\x88\xc6;\x82`2\xfc\xa2\xb8\xa2{\xd3\xdbFi\xc2\xea\xb8G'\x0b\xea\x18?S\xc6\xef]E\x85\xc0\xd1\xffk\x1br\x8f\x1c"
+
+[INFO] Sending transaction to SIoTDSC__SendMSG(from:1,to:2, msg:turn off led Nonce : 91849. Gas : 586
+
+[INFO]  --------- TRANSACTION RECEIPT BEGINS ------------ 
+AttributeDict({'transactionHash': HexBytes('0xd221c28b8b01ebf0965fd6acb3b85d4854d221134b7ca845538a4da8e7a4452f'), 'transactionIndex': 0, 'blockHash': HexBytes('0x308abc8d4b2d2aec4afa98c5ccc6c4b11796a155bf97c7b5e20f74e15b299e35'), 'blockNumber': 1506, 'from': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'to': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'gasUsed': 91849, 'cumulativeGasUsed': 91849, 'contractAddress': None, 'logs': [AttributeDict({'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xd221c28b8b01ebf0965fd6acb3b85d4854d221134b7ca845538a4da8e7a4452f'), 'blockHash': HexBytes('0x308abc8d4b2d2aec4afa98c5ccc6c4b11796a155bf97c7b5e20f74e15b299e35'), 'blockNumber': 1506, 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'data': '0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000007626731d27240ee565829a7e2c09bd0e48d52936000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000036536d61727420436f6e74726163742853496f54445343292053656e644d5347205472616e73616374696f6e20436f6d706c657465642100000000000000000000', 'topics': [HexBytes('0xeae353f1679a07ffd0b2e7bd40bf60a4043ec74ab74ed16acf4131212c83f57d')], 'type': 'mined'})], 'status': 1, 'logsBloom': HexBytes('0x00800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000004000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000')})
+[INFO]  --------- TRANSACTION RECEIPT ENDS   -------------- 
+
+[INFO]  --------- TRANSACTION LOGS BEGINS --------------- 
+(AttributeDict({'args': AttributeDict({'id': 1, 'owner': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'message': 'Smart Contract(SIoTDSC) SendMSG Transaction Completed!', 'status': True}), 'event': 'TransactionCompleted', 'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xd221c28b8b01ebf0965fd6acb3b85d4854d221134b7ca845538a4da8e7a4452f'), 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'blockHash': HexBytes('0x308abc8d4b2d2aec4afa98c5ccc6c4b11796a155bf97c7b5e20f74e15b299e35'), 'blockNumber': 1506}),)
+[INFO]  --------- TRANSACTION LOGS ENDS   ----------------- 
+
+[INFO] Message : Smart Contract(SIoTDSC) SendMSG Transaction Completed!
+
+[INFO] Node Successfully Sent Message. Transaction Receipt Status  : 1
+
+[INFO] Blockchain Registration Ends----------------Sun Apr 26 13:51:59 2020
+
+[INFO] Blockchain Account After Balance -----------99434745700000000000
+
+[INFO] Reading Blockchain Message -----------------Sun Apr 26 13:51:59 2020
+
+[INFO] Blockchain Account Before Balance ----------99434745700000000000
+
+[INFO] Blockchain Registration Begins--------------Sun Apr 26 13:52:00 2020
+[INFO] Blockchain read_MSG sender          = 1
+[INFO] Blockchain read_MSG groupTicket     = 19a97d3741a7861fbdbb21f21869368f
+[INFO] Blockchain read_MSG groupTicket int = 34110737742783727068050793212204889743
+[INFO] Blockchain Signed Transaction Information
+[INFO] r : 26634001920575415254433607206657348973176512249421978649411435200533735847811
+[INFO] r : 26634001920575415254433607206657348973176512249421978649411435200533735847811
+[INFO] s : 28
+[INFO] signature : 0x3ae24f9569853bf6cebeb4045f55040a43a70656af0cc3ce7c53f5f65e8eb78333754a9c045147aedc748dfe17ea52a435aad7a22588fc98c527f7383e60ddc81c
+
+[INFO] Sending transaction to SIoTDSC__ReadMSG(id : 1) Nonce : 67133. Gas : 587
+
+[INFO]  --------- TRANSACTION RECEIPT BEGINS ------------ 
+AttributeDict({'transactionHash': HexBytes('0x8a1cdaf9e4b80c286edab81396fcbdafc2d9f4abe78af2141f196d8335a95334'), 'transactionIndex': 0, 'blockHash': HexBytes('0xbba2f9927f8b0ba750c5755244c831136436259c4250855f75724a29ef23308c'), 'blockNumber': 1510, 'from': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'to': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'gasUsed': 66034, 'cumulativeGasUsed': 66034, 'contractAddress': None, 'logs': [], 'status': 1, 'logsBloom': HexBytes('0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000')})
+[INFO]  --------- TRANSACTION RECEIPT ENDS   -------------- 
+
+[INFO] Blockchain Registration Ends----------------Sun Apr 26 13:52:04 2020
+
+[INFO] Blockchain Account After Balance -----------99433425020000000000
+
+[INFO] TOGGLE READ: read_state : 1, is_read_status : 0
+
+[INFO] Blockchain Transaction Begins--------------Sun Apr 26 13:52:14 2020
+
+[INFO] Blockchain Account Balance ----------------99433425020000000000
+[INFO] Blockchain Transaction Ends ----------------Sun Apr 26 13:52:14 2020
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@########################################################################@
+@######################## SIoTD_A LED   #################################@
+@########################################################################@
+@###########             #####      ########   ##########################@
+@###########   #######   #####   ###  ######   ##########################@
+@###########   #######   #####   ####  #####   ##########################@
+@###########   #######   #####   #####  ####   ##########################@
+@###########   #######   #####   ######  ###   ##########################@
+@###########   #######   #####   #######  ##   ##########################@
+@###########   #######   #####   ########  #   ##########################@
+@###########             #####   #########     ##########################@
+@########################################################################@
+@########################################################################@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+[INFO] SEND: led_state : 1, out : turn off led, send_status : 1
+[INFO]-------------------------SENDING-----------------------turn off led
+
+[INFO] Sending Blockchain Message -----------------Sun Apr 26 13:52:14 2020
+
+[INFO] Blockchain Account Before Balance ----------99433425020000000000
+
+[INFO] Blockchain Registration Begins--------------Sun Apr 26 13:52:14 2020
+[INFO] Blockchain send_MSG sender     = 1
+[INFO] Blockchain send_MSG receiver   = 2
+[INFO] Blockchain send_MSG _message   = turn off led
+[INFO] Blockchain send_MSG grpTicket  = 19a97d3741a7861fbdbb21f21869368f
+[INFO] Blockchain send_MSG Ticket int = 34110737742783727068050793212204889743
+[INFO] Blockchain Signed Transaction Information
+[INFO] r : 50988073157098198205699417718934358077357516805321390284349372902826737107552
+[INFO] r : 50988073157098198205699417718934358077357516805321390284349372902826737107552
+[INFO] s : 28
+[INFO] signature : b"p\xba:\t\xa8\xfb\x8ez\x83\xc5\x00\x15\x86\xb7\x01\x1a&\xd0q_\xf1\xc1^v\\\x19\xb9\x88\xc6;\x82`2\xfc\xa2\xb8\xa2{\xd3\xdbFi\xc2\xea\xb8G'\x0b\xea\x18?S\xc6\xef]E\x85\xc0\xd1\xffk\x1br\x8f\x1c"
+
+[INFO] Sending transaction to SIoTDSC__SendMSG(from:1,to:2, msg:turn off led Nonce : 91849. Gas : 588
+
+[INFO]  --------- TRANSACTION RECEIPT BEGINS ------------ 
+AttributeDict({'transactionHash': HexBytes('0xdbe710ce2ab9407d5f9ef60250fb58269fbfc1ca36f1d15da170e99954cb5c3c'), 'transactionIndex': 0, 'blockHash': HexBytes('0xffbe798086f80f8288d8e8d31532bd4a37acd409bea2202ce36d5ab78f9487a2'), 'blockNumber': 1514, 'from': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'to': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'gasUsed': 91849, 'cumulativeGasUsed': 91849, 'contractAddress': None, 'logs': [AttributeDict({'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xdbe710ce2ab9407d5f9ef60250fb58269fbfc1ca36f1d15da170e99954cb5c3c'), 'blockHash': HexBytes('0xffbe798086f80f8288d8e8d31532bd4a37acd409bea2202ce36d5ab78f9487a2'), 'blockNumber': 1514, 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'data': '0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000007626731d27240ee565829a7e2c09bd0e48d52936000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000036536d61727420436f6e74726163742853496f54445343292053656e644d5347205472616e73616374696f6e20436f6d706c657465642100000000000000000000', 'topics': [HexBytes('0xeae353f1679a07ffd0b2e7bd40bf60a4043ec74ab74ed16acf4131212c83f57d')], 'type': 'mined'})], 'status': 1, 'logsBloom': HexBytes('0x00800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000004000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000')})
+[INFO]  --------- TRANSACTION RECEIPT ENDS   -------------- 
+
+[INFO]  --------- TRANSACTION LOGS BEGINS --------------- 
+(AttributeDict({'args': AttributeDict({'id': 1, 'owner': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'message': 'Smart Contract(SIoTDSC) SendMSG Transaction Completed!', 'status': True}), 'event': 'TransactionCompleted', 'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xdbe710ce2ab9407d5f9ef60250fb58269fbfc1ca36f1d15da170e99954cb5c3c'), 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'blockHash': HexBytes('0xffbe798086f80f8288d8e8d31532bd4a37acd409bea2202ce36d5ab78f9487a2'), 'blockNumber': 1514}),)
+[INFO]  --------- TRANSACTION LOGS ENDS   ----------------- 
+
+[INFO] Message : Smart Contract(SIoTDSC) SendMSG Transaction Completed!
+
+[INFO] Node Successfully Sent Message. Transaction Receipt Status  : 1
+
+[INFO] Blockchain Registration Ends----------------Sun Apr 26 13:52:17 2020
+
+[INFO] Blockchain Account After Balance -----------99431588040000000000
+
+[INFO] Reading Blockchain Message -----------------Sun Apr 26 13:52:17 2020
+
+[INFO] Blockchain Account Before Balance ----------99431588040000000000
+
+[INFO] Blockchain Registration Begins--------------Sun Apr 26 13:52:17 2020
+[INFO] Blockchain read_MSG sender          = 1
+[INFO] Blockchain read_MSG groupTicket     = 19a97d3741a7861fbdbb21f21869368f
+[INFO] Blockchain read_MSG groupTicket int = 34110737742783727068050793212204889743
+[INFO] Blockchain Signed Transaction Information
+[INFO] r : 26634001920575415254433607206657348973176512249421978649411435200533735847811
+[INFO] r : 26634001920575415254433607206657348973176512249421978649411435200533735847811
+[INFO] s : 28
+[INFO] signature : 0x3ae24f9569853bf6cebeb4045f55040a43a70656af0cc3ce7c53f5f65e8eb78333754a9c045147aedc748dfe17ea52a435aad7a22588fc98c527f7383e60ddc81c
+
+[INFO] Sending transaction to SIoTDSC__ReadMSG(id : 1) Nonce : 82219. Gas : 589
+
+[INFO]  --------- TRANSACTION RECEIPT BEGINS ------------ 
+AttributeDict({'transactionHash': HexBytes('0x0858867540293deab76f49cb8eaec790e57b04369d6327de2aee5174f341904f'), 'transactionIndex': 0, 'blockHash': HexBytes('0xf888231777d06eb18152effee5653ab7c45d0b317235c717bf14e0c2ccf7aa81'), 'blockNumber': 1517, 'from': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'to': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'gasUsed': 82219, 'cumulativeGasUsed': 82219, 'contractAddress': None, 'logs': [AttributeDict({'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0x0858867540293deab76f49cb8eaec790e57b04369d6327de2aee5174f341904f'), 'blockHash': HexBytes('0xf888231777d06eb18152effee5653ab7c45d0b317235c717bf14e0c2ccf7aa81'), 'blockNumber': 1517, 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'data': '0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000006e00000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000c7475726e206f6666206c65640000000000000000000000000000000000000000', 'topics': [HexBytes('0x18492a564d2187be47987ff8383be405c38c2dd266be23986a7671543ec108c0')], 'type': 'mined'})], 'status': 1, 'logsBloom': HexBytes('0x00000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000100000100000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000')})
+[INFO]  --------- TRANSACTION RECEIPT ENDS   -------------- 
+
+[INFO]  --------- TRANSACTION LOGS BEGINS --------------- 
+(AttributeDict({'args': AttributeDict({'id': 1, 'sender': 2, 'receiver': 1, 'grpId': 110, 'message': 'turn off led'}), 'event': 'MessageCreated', 'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0x0858867540293deab76f49cb8eaec790e57b04369d6327de2aee5174f341904f'), 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'blockHash': HexBytes('0xf888231777d06eb18152effee5653ab7c45d0b317235c717bf14e0c2ccf7aa81'), 'blockNumber': 1517}),)
+[INFO]  --------- TRANSACTION LOGS ENDS   ----------------- 
+
+[INFO] Message : turn off led
+
+[INFO] Node Successfully Read Message. Transaction Receipt Status  : 1
+
+[INFO] Blockchain Registration Ends----------------Sun Apr 26 13:52:20 2020
+
+[INFO] Blockchain Account After Balance -----------99429943660000000000
+[INFO]------------------------RECEIVED-----------------------turn off led
+
+[INFO] TOGGLE READ: read_state : 0, is_read_status : 0
+
+[INFO] Blockchain Transaction Begins--------------Sun Apr 26 13:52:30 2020
+
+[INFO] Blockchain Account Balance ----------------99429943660000000000
+[INFO] Blockchain Transaction Ends ----------------Sun Apr 26 13:52:30 2020
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@########################################################################@
+@########################  SIoTD_A LED  #################################@
+@########################################################################@
+@###########             ###           ####           ###################@
+@###########   #######   ###   ############   ###########################@
+@###########   #######   ###   ############   ###########################@
+@###########   #######   ###            ###           ###################@
+@###########   #######   ###   ############   ###########################@
+@###########   #######   ###   ############   ###########################@
+@###########   #######   ###   ############   ###########################@
+@###########             ###   ############   ###########################@
+@########################################################################@
+@########################################################################@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+[INFO] TOGGLE SEND: led_state : 0, out : turn on led, send_status : 1
+[INFO]-------------------------SENDING-----------------------turn on led
+
+[INFO] Sending Blockchain Message -----------------Sun Apr 26 13:52:30 2020
+
+[INFO] Blockchain Account Before Balance ----------99429943660000000000
+
+[INFO] Blockchain Registration Begins--------------Sun Apr 26 13:52:30 2020
+[INFO] Blockchain send_MSG sender     = 1
+[INFO] Blockchain send_MSG receiver   = 2
+[INFO] Blockchain send_MSG _message   = turn on led
+[INFO] Blockchain send_MSG grpTicket  = 19a97d3741a7861fbdbb21f21869368f
+[INFO] Blockchain send_MSG Ticket int = 34110737742783727068050793212204889743
+[INFO] Blockchain Signed Transaction Information
+[INFO] r : 40816939374719533662978102562231246359991291133224320617090858355571715385548
+[INFO] r : 40816939374719533662978102562231246359991291133224320617090858355571715385548
+[INFO] s : 28
+[INFO] signature : b"Z=\x91\xa9\xcf8Mq_\x13\xf5\xf73o\x05l\xa7`\x8a\x0f\x94\x10\xaei\x9b\x92\x84\xbc'\xda\xa8\xcc\r\xa6\x11\x81q\xfcz\xd2\xcb\xbc+7\xb2\xc9}\xab\xbd\x00\x94\x11\x87\xdda\xecQ\xfa\xa5Z<\xa5\xb5\xa5\x1c"
+
+[INFO] Sending transaction to SIoTDSC__SendMSG(from:1,to:2, msg:turn on led Nonce : 95804. Gas : 590
+
+[INFO]  --------- TRANSACTION RECEIPT BEGINS ------------ 
+AttributeDict({'transactionHash': HexBytes('0xdc2ff52ce790901ed39a2d84e5a3226317934d042f75ef22087b430b604963b3'), 'transactionIndex': 0, 'blockHash': HexBytes('0xe0ac64a5758e02927983da168b35ae2a569655b2cdea3cd3c849eb78348a2faf'), 'blockNumber': 1523, 'from': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'to': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'gasUsed': 95804, 'cumulativeGasUsed': 95804, 'contractAddress': None, 'logs': [AttributeDict({'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xdc2ff52ce790901ed39a2d84e5a3226317934d042f75ef22087b430b604963b3'), 'blockHash': HexBytes('0xe0ac64a5758e02927983da168b35ae2a569655b2cdea3cd3c849eb78348a2faf'), 'blockNumber': 1523, 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'data': '0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000007626731d27240ee565829a7e2c09bd0e48d52936000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000036536d61727420436f6e74726163742853496f54445343292053656e644d5347205472616e73616374696f6e20436f6d706c657465642100000000000000000000', 'topics': [HexBytes('0xeae353f1679a07ffd0b2e7bd40bf60a4043ec74ab74ed16acf4131212c83f57d')], 'type': 'mined'})], 'status': 1, 'logsBloom': HexBytes('0x00800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000004000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000')})
+[INFO]  --------- TRANSACTION RECEIPT ENDS   -------------- 
+
+[INFO]  --------- TRANSACTION LOGS BEGINS --------------- 
+(AttributeDict({'args': AttributeDict({'id': 1, 'owner': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'message': 'Smart Contract(SIoTDSC) SendMSG Transaction Completed!', 'status': True}), 'event': 'TransactionCompleted', 'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xdc2ff52ce790901ed39a2d84e5a3226317934d042f75ef22087b430b604963b3'), 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'blockHash': HexBytes('0xe0ac64a5758e02927983da168b35ae2a569655b2cdea3cd3c849eb78348a2faf'), 'blockNumber': 1523}),)
+[INFO]  --------- TRANSACTION LOGS ENDS   ----------------- 
+
+[INFO] Message : Smart Contract(SIoTDSC) SendMSG Transaction Completed!
+
+[INFO] Node Successfully Sent Message. Transaction Receipt Status  : 1
+
+[INFO] Blockchain Registration Ends----------------Sun Apr 26 13:52:32 2020
+
+[INFO] Blockchain Account After Balance -----------99428027580000000000
+
+[INFO] Reading Blockchain Message -----------------Sun Apr 26 13:52:32 2020
+
+[INFO] Blockchain Account Before Balance ----------99428027580000000000
+
+[INFO] Blockchain Registration Begins--------------Sun Apr 26 13:52:32 2020
+[INFO] Blockchain read_MSG sender          = 1
+[INFO] Blockchain read_MSG groupTicket     = 19a97d3741a7861fbdbb21f21869368f
+[INFO] Blockchain read_MSG groupTicket int = 34110737742783727068050793212204889743
+[INFO] Blockchain Signed Transaction Information
+[INFO] r : 26634001920575415254433607206657348973176512249421978649411435200533735847811
+[INFO] r : 26634001920575415254433607206657348973176512249421978649411435200533735847811
+[INFO] s : 28
+[INFO] signature : 0x3ae24f9569853bf6cebeb4045f55040a43a70656af0cc3ce7c53f5f65e8eb78333754a9c045147aedc748dfe17ea52a435aad7a22588fc98c527f7383e60ddc81c
+
+[INFO] Sending transaction to SIoTDSC__ReadMSG(id : 1) Nonce : 82219. Gas : 591
+
+[INFO]  --------- TRANSACTION RECEIPT BEGINS ------------ 
+AttributeDict({'transactionHash': HexBytes('0xe75b49e6f7f32f6818639d49a9a0253291784d416a39bbfa7adc28f8e9c7bab0'), 'transactionIndex': 0, 'blockHash': HexBytes('0x7b8f001160c9489c68065d8b375c9432e9cf5906dfe60ba6e63352676da722d1'), 'blockNumber': 1525, 'from': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'to': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'gasUsed': 82219, 'cumulativeGasUsed': 82219, 'contractAddress': None, 'logs': [AttributeDict({'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xe75b49e6f7f32f6818639d49a9a0253291784d416a39bbfa7adc28f8e9c7bab0'), 'blockHash': HexBytes('0x7b8f001160c9489c68065d8b375c9432e9cf5906dfe60ba6e63352676da722d1'), 'blockNumber': 1525, 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'data': '0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000006e00000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000b7475726e206f6e206c6564000000000000000000000000000000000000000000', 'topics': [HexBytes('0x18492a564d2187be47987ff8383be405c38c2dd266be23986a7671543ec108c0')], 'type': 'mined'})], 'status': 1, 'logsBloom': HexBytes('0x00000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000100000100000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000')})
+[INFO]  --------- TRANSACTION RECEIPT ENDS   -------------- 
+
+[INFO]  --------- TRANSACTION LOGS BEGINS --------------- 
+(AttributeDict({'args': AttributeDict({'id': 1, 'sender': 2, 'receiver': 1, 'grpId': 110, 'message': 'turn on led'}), 'event': 'MessageCreated', 'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xe75b49e6f7f32f6818639d49a9a0253291784d416a39bbfa7adc28f8e9c7bab0'), 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'blockHash': HexBytes('0x7b8f001160c9489c68065d8b375c9432e9cf5906dfe60ba6e63352676da722d1'), 'blockNumber': 1525}),)
+[INFO]  --------- TRANSACTION LOGS ENDS   ----------------- 
+
+[INFO] Message : turn on led
+
+[INFO] Node Successfully Read Message. Transaction Receipt Status  : 1
+
+[INFO] Blockchain Registration Ends----------------Sun Apr 26 13:52:33 2020
+
+[INFO] Blockchain Account After Balance -----------99426383200000000000
+[INFO]------------------------RECEIVED-----------------------turn on led
+
+[INFO] TOGGLE READ: read_state : 1, is_read_status : 0
+
+[INFO] Blockchain Transaction Begins--------------Sun Apr 26 13:52:44 2020
+
+[INFO] Blockchain Account Balance ----------------99426383200000000000
+[INFO] Blockchain Transaction Ends ----------------Sun Apr 26 13:52:44 2020
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@########################################################################@
+@######################## SIoTD_A LED   #################################@
+@########################################################################@
+@###########             #####      ########   ##########################@
+@###########   #######   #####   ###  ######   ##########################@
+@###########   #######   #####   ####  #####   ##########################@
+@###########   #######   #####   #####  ####   ##########################@
+@###########   #######   #####   ######  ###   ##########################@
+@###########   #######   #####   #######  ##   ##########################@
+@###########   #######   #####   ########  #   ##########################@
+@###########             #####   #########     ##########################@
+@########################################################################@
+@########################################################################@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+[INFO] SEND: led_state : 1, out : turn off led, send_status : 1
+[INFO]-------------------------SENDING-----------------------turn off led
+
+[INFO] Sending Blockchain Message -----------------Sun Apr 26 13:52:44 2020
+
+[INFO] Blockchain Account Before Balance ----------99426383200000000000
+
+[INFO] Blockchain Registration Begins--------------Sun Apr 26 13:52:44 2020
+[INFO] Blockchain send_MSG sender     = 1
+[INFO] Blockchain send_MSG receiver   = 2
+[INFO] Blockchain send_MSG _message   = turn off led
+[INFO] Blockchain send_MSG grpTicket  = 19a97d3741a7861fbdbb21f21869368f
+[INFO] Blockchain send_MSG Ticket int = 34110737742783727068050793212204889743
+[INFO] Blockchain Signed Transaction Information
+[INFO] r : 50988073157098198205699417718934358077357516805321390284349372902826737107552
+[INFO] r : 50988073157098198205699417718934358077357516805321390284349372902826737107552
+[INFO] s : 28
+[INFO] signature : b"p\xba:\t\xa8\xfb\x8ez\x83\xc5\x00\x15\x86\xb7\x01\x1a&\xd0q_\xf1\xc1^v\\\x19\xb9\x88\xc6;\x82`2\xfc\xa2\xb8\xa2{\xd3\xdbFi\xc2\xea\xb8G'\x0b\xea\x18?S\xc6\xef]E\x85\xc0\xd1\xffk\x1br\x8f\x1c"
+
+[INFO] Sending transaction to SIoTDSC__SendMSG(from:1,to:2, msg:turn off led Nonce : 96049. Gas : 592
+
+[INFO]  --------- TRANSACTION RECEIPT BEGINS ------------ 
+AttributeDict({'transactionHash': HexBytes('0x8ff74d1467dd9d732a19b42f2a4e414dcbb74f34036f43f3723d8791762a8d48'), 'transactionIndex': 0, 'blockHash': HexBytes('0x31167080f1256eb710f12baf26266ed9ff43e7dbff852c44cd4e17169ca91533'), 'blockNumber': 1531, 'from': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'to': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'gasUsed': 96049, 'cumulativeGasUsed': 96049, 'contractAddress': None, 'logs': [AttributeDict({'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0x8ff74d1467dd9d732a19b42f2a4e414dcbb74f34036f43f3723d8791762a8d48'), 'blockHash': HexBytes('0x31167080f1256eb710f12baf26266ed9ff43e7dbff852c44cd4e17169ca91533'), 'blockNumber': 1531, 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'data': '0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000007626731d27240ee565829a7e2c09bd0e48d52936000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000036536d61727420436f6e74726163742853496f54445343292053656e644d5347205472616e73616374696f6e20436f6d706c657465642100000000000000000000', 'topics': [HexBytes('0xeae353f1679a07ffd0b2e7bd40bf60a4043ec74ab74ed16acf4131212c83f57d')], 'type': 'mined'})], 'status': 1, 'logsBloom': HexBytes('0x00800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000004000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000')})
+[INFO]  --------- TRANSACTION RECEIPT ENDS   -------------- 
+
+[INFO]  --------- TRANSACTION LOGS BEGINS --------------- 
+(AttributeDict({'args': AttributeDict({'id': 1, 'owner': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'message': 'Smart Contract(SIoTDSC) SendMSG Transaction Completed!', 'status': True}), 'event': 'TransactionCompleted', 'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0x8ff74d1467dd9d732a19b42f2a4e414dcbb74f34036f43f3723d8791762a8d48'), 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'blockHash': HexBytes('0x31167080f1256eb710f12baf26266ed9ff43e7dbff852c44cd4e17169ca91533'), 'blockNumber': 1531}),)
+[INFO]  --------- TRANSACTION LOGS ENDS   ----------------- 
+
+[INFO] Message : Smart Contract(SIoTDSC) SendMSG Transaction Completed!
+
+[INFO] Node Successfully Sent Message. Transaction Receipt Status  : 1
+
+[INFO] Blockchain Registration Ends----------------Sun Apr 26 13:52:45 2020
+
+[INFO] Blockchain Account After Balance -----------99424462220000000000
+
+[INFO] Reading Blockchain Message -----------------Sun Apr 26 13:52:46 2020
+
+[INFO] Blockchain Account Before Balance ----------99424462220000000000
+
+[INFO] Blockchain Registration Begins--------------Sun Apr 26 13:52:46 2020
+[INFO] Blockchain read_MSG sender          = 1
+[INFO] Blockchain read_MSG groupTicket     = 19a97d3741a7861fbdbb21f21869368f
+[INFO] Blockchain read_MSG groupTicket int = 34110737742783727068050793212204889743
+[INFO] Blockchain Signed Transaction Information
+[INFO] r : 26634001920575415254433607206657348973176512249421978649411435200533735847811
+[INFO] r : 26634001920575415254433607206657348973176512249421978649411435200533735847811
+[INFO] s : 28
+[INFO] signature : 0x3ae24f9569853bf6cebeb4045f55040a43a70656af0cc3ce7c53f5f65e8eb78333754a9c045147aedc748dfe17ea52a435aad7a22588fc98c527f7383e60ddc81c
+
+[INFO] Sending transaction to SIoTDSC__ReadMSG(id : 1) Nonce : 82219. Gas : 593
+
+[INFO]  --------- TRANSACTION RECEIPT BEGINS ------------ 
+AttributeDict({'transactionHash': HexBytes('0x6229ad3a49b1e1948c823e8b40f6e2744b8af5a1627cf98d43e2a364a3050422'), 'transactionIndex': 0, 'blockHash': HexBytes('0x9986338f20f5d3c003edc2d025cf673bb99ce04ce0258bde48cb0b3555b3e597'), 'blockNumber': 1533, 'from': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'to': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'gasUsed': 82219, 'cumulativeGasUsed': 82219, 'contractAddress': None, 'logs': [AttributeDict({'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0x6229ad3a49b1e1948c823e8b40f6e2744b8af5a1627cf98d43e2a364a3050422'), 'blockHash': HexBytes('0x9986338f20f5d3c003edc2d025cf673bb99ce04ce0258bde48cb0b3555b3e597'), 'blockNumber': 1533, 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'data': '0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000006e00000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000b7475726e206f6e206c6564000000000000000000000000000000000000000000', 'topics': [HexBytes('0x18492a564d2187be47987ff8383be405c38c2dd266be23986a7671543ec108c0')], 'type': 'mined'})], 'status': 1, 'logsBloom': HexBytes('0x00000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000100000100000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000')})
+[INFO]  --------- TRANSACTION RECEIPT ENDS   -------------- 
+
+[INFO]  --------- TRANSACTION LOGS BEGINS --------------- 
+(AttributeDict({'args': AttributeDict({'id': 1, 'sender': 2, 'receiver': 1, 'grpId': 110, 'message': 'turn on led'}), 'event': 'MessageCreated', 'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0x6229ad3a49b1e1948c823e8b40f6e2744b8af5a1627cf98d43e2a364a3050422'), 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'blockHash': HexBytes('0x9986338f20f5d3c003edc2d025cf673bb99ce04ce0258bde48cb0b3555b3e597'), 'blockNumber': 1533}),)
+[INFO]  --------- TRANSACTION LOGS ENDS   ----------------- 
+
+[INFO] Message : turn on led
+
+[INFO] Node Successfully Read Message. Transaction Receipt Status  : 1
+
+[INFO] Blockchain Registration Ends----------------Sun Apr 26 13:52:47 2020
+
+[INFO] Blockchain Account After Balance -----------99422817840000000000
+[INFO]------------------------RECEIVED-----------------------turn on led
+
+[INFO] TOGGLE READ: read_state : 0, is_read_status : 0
+
+[INFO] Blockchain Transaction Begins--------------Sun Apr 26 13:52:57 2020
+
+[INFO] Blockchain Account Balance ----------------99422817840000000000
+[INFO] Blockchain Transaction Ends ----------------Sun Apr 26 13:52:58 2020
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@########################################################################@
+@######################## SIoTD_A LED   #################################@
+@########################################################################@
+@###########             #####      ########   ##########################@
+@###########   #######   #####   ###  ######   ##########################@
+@###########   #######   #####   ####  #####   ##########################@
+@###########   #######   #####   #####  ####   ##########################@
+@###########   #######   #####   ######  ###   ##########################@
+@###########   #######   #####   #######  ##   ##########################@
+@###########   #######   #####   ########  #   ##########################@
+@###########             #####   #########     ##########################@
+@########################################################################@
+@########################################################################@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+[INFO] SEND: led_state : 1, out : turn off led, send_status : 1
+[INFO]-------------------------SENDING-----------------------turn off led
+
+[INFO] Sending Blockchain Message -----------------Sun Apr 26 13:52:58 2020
+
+[INFO] Blockchain Account Before Balance ----------99422817840000000000
+
+[INFO] Blockchain Registration Begins--------------Sun Apr 26 13:53:00 2020
+[INFO] Blockchain send_MSG sender     = 1
+[INFO] Blockchain send_MSG receiver   = 2
+[INFO] Blockchain send_MSG _message   = turn off led
+[INFO] Blockchain send_MSG grpTicket  = 19a97d3741a7861fbdbb21f21869368f
+[INFO] Blockchain send_MSG Ticket int = 34110737742783727068050793212204889743
+[INFO] Blockchain Signed Transaction Information
+[INFO] r : 50988073157098198205699417718934358077357516805321390284349372902826737107552
+[INFO] r : 50988073157098198205699417718934358077357516805321390284349372902826737107552
+[INFO] s : 28
+[INFO] signature : b"p\xba:\t\xa8\xfb\x8ez\x83\xc5\x00\x15\x86\xb7\x01\x1a&\xd0q_\xf1\xc1^v\\\x19\xb9\x88\xc6;\x82`2\xfc\xa2\xb8\xa2{\xd3\xdbFi\xc2\xea\xb8G'\x0b\xea\x18?S\xc6\xef]E\x85\xc0\xd1\xffk\x1br\x8f\x1c"
+
+[INFO] Sending transaction to SIoTDSC__SendMSG(from:1,to:2, msg:turn off led Nonce : 91849. Gas : 594
+
+[INFO]  --------- TRANSACTION RECEIPT BEGINS ------------ 
+AttributeDict({'transactionHash': HexBytes('0xb491523247f63c9becfb89bed6fe66294d5e262eb5aaeced84ccca214cd02ff4'), 'transactionIndex': 0, 'blockHash': HexBytes('0x45fad1e057c6d62c589c2016907b4d47bf3a4772550c78bff24a03106def570b'), 'blockNumber': 1538, 'from': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'to': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'gasUsed': 91849, 'cumulativeGasUsed': 91849, 'contractAddress': None, 'logs': [AttributeDict({'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xb491523247f63c9becfb89bed6fe66294d5e262eb5aaeced84ccca214cd02ff4'), 'blockHash': HexBytes('0x45fad1e057c6d62c589c2016907b4d47bf3a4772550c78bff24a03106def570b'), 'blockNumber': 1538, 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'data': '0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000007626731d27240ee565829a7e2c09bd0e48d52936000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000036536d61727420436f6e74726163742853496f54445343292053656e644d5347205472616e73616374696f6e20436f6d706c657465642100000000000000000000', 'topics': [HexBytes('0xeae353f1679a07ffd0b2e7bd40bf60a4043ec74ab74ed16acf4131212c83f57d')], 'type': 'mined'})], 'status': 1, 'logsBloom': HexBytes('0x00800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000004000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000')})
+[INFO]  --------- TRANSACTION RECEIPT ENDS   -------------- 
+
+[INFO]  --------- TRANSACTION LOGS BEGINS --------------- 
+(AttributeDict({'args': AttributeDict({'id': 1, 'owner': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'message': 'Smart Contract(SIoTDSC) SendMSG Transaction Completed!', 'status': True}), 'event': 'TransactionCompleted', 'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xb491523247f63c9becfb89bed6fe66294d5e262eb5aaeced84ccca214cd02ff4'), 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'blockHash': HexBytes('0x45fad1e057c6d62c589c2016907b4d47bf3a4772550c78bff24a03106def570b'), 'blockNumber': 1538}),)
+[INFO]  --------- TRANSACTION LOGS ENDS   ----------------- 
+
+[INFO] Message : Smart Contract(SIoTDSC) SendMSG Transaction Completed!
+
+[INFO] Node Successfully Sent Message. Transaction Receipt Status  : 1
+
+[INFO] Blockchain Registration Ends----------------Sun Apr 26 13:53:11 2020
+
+[INFO] Blockchain Account After Balance -----------99420980860000000000
+
+[INFO] Reading Blockchain Message -----------------Sun Apr 26 13:53:15 2020
+
+[INFO] Blockchain Account Before Balance ----------99420980860000000000
+
+[INFO] Blockchain Registration Begins--------------Sun Apr 26 13:53:16 2020
+[INFO] Blockchain read_MSG sender          = 1
+[INFO] Blockchain read_MSG groupTicket     = 19a97d3741a7861fbdbb21f21869368f
+[INFO] Blockchain read_MSG groupTicket int = 34110737742783727068050793212204889743
+[INFO] Blockchain Signed Transaction Information
+[INFO] r : 26634001920575415254433607206657348973176512249421978649411435200533735847811
+[INFO] r : 26634001920575415254433607206657348973176512249421978649411435200533735847811
+[INFO] s : 28
+[INFO] signature : 0x3ae24f9569853bf6cebeb4045f55040a43a70656af0cc3ce7c53f5f65e8eb78333754a9c045147aedc748dfe17ea52a435aad7a22588fc98c527f7383e60ddc81c
+
+[INFO] Sending transaction to SIoTDSC__ReadMSG(id : 1) Nonce : 67133. Gas : 595
+
+[INFO]  --------- TRANSACTION RECEIPT BEGINS ------------ 
+AttributeDict({'transactionHash': HexBytes('0xaa7e1bbf76cecaed017c58abce7ead6a1706b8589697a3fc1526ec6dd2f1e90e'), 'transactionIndex': 0, 'blockHash': HexBytes('0xcfbf1b362c94c19059b0781a7c047b5353f7e3e3c90cafb5b65910f3024e68bd'), 'blockNumber': 1542, 'from': '0x7626731D27240EE565829A7E2C09bD0E48d52936', 'to': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'gasUsed': 82219, 'cumulativeGasUsed': 82219, 'contractAddress': None, 'logs': [AttributeDict({'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xaa7e1bbf76cecaed017c58abce7ead6a1706b8589697a3fc1526ec6dd2f1e90e'), 'blockHash': HexBytes('0xcfbf1b362c94c19059b0781a7c047b5353f7e3e3c90cafb5b65910f3024e68bd'), 'blockNumber': 1542, 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'data': '0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000006e00000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000c7475726e206f6666206c65640000000000000000000000000000000000000000', 'topics': [HexBytes('0x18492a564d2187be47987ff8383be405c38c2dd266be23986a7671543ec108c0')], 'type': 'mined'})], 'status': 1, 'logsBloom': HexBytes('0x00000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000100000100000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000')})
+[INFO]  --------- TRANSACTION RECEIPT ENDS   -------------- 
+
+[INFO]  --------- TRANSACTION LOGS BEGINS --------------- 
+(AttributeDict({'args': AttributeDict({'id': 1, 'sender': 2, 'receiver': 1, 'grpId': 110, 'message': 'turn off led'}), 'event': 'MessageCreated', 'logIndex': 0, 'transactionIndex': 0, 'transactionHash': HexBytes('0xaa7e1bbf76cecaed017c58abce7ead6a1706b8589697a3fc1526ec6dd2f1e90e'), 'address': '0xcA9545aDa0b924c57da8ec75cdbf4c855F92F1A2', 'blockHash': HexBytes('0xcfbf1b362c94c19059b0781a7c047b5353f7e3e3c90cafb5b65910f3024e68bd'), 'blockNumber': 1542}),)
+[INFO]  --------- TRANSACTION LOGS ENDS   ----------------- 
+
+[INFO] Message : turn off led
+
+[INFO] Node Successfully Read Message. Transaction Receipt Status  : 1
+
+[INFO] Blockchain Registration Ends----------------Sun Apr 26 13:53:40 2020
+
+[INFO] Blockchain Account After Balance -----------99419336480000000000
+[INFO]------------------------RECEIVED-----------------------turn off led
+
+[INFO] TOGGLE READ: read_state : 1, is_read_status : 0
+
+[INFO] Blockchain Transaction Begins--------------Sun Apr 26 13:54:00 2020
+
+[INFO] Blockchain Account Balance ----------------99419336480000000000
+[INFO] Blockchain Transaction Ends ----------------Sun Apr 26 13:54:14 2020
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@########################################################################@
+@########################  SIoTD_A LED  #################################@
+@########################################################################@
+@###########             ###           ####           ###################@
+@###########   #######   ###   ############   ###########################@
+@###########   #######   ###   ############   ###########################@
+@###########   #######   ###            ###           ###################@
+@###########   #######   ###   ############   ###########################@
+@###########   #######   ###   ############   ###########################@
+@###########   #######   ###   ############   ###########################@
+@###########             ###   ############   ###########################@
+@########################################################################@
+@########################################################################@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+[INFO] TOGGLE SEND: led_state : 0, out : turn on led, send_status : 1
+[INFO]-------------------------SENDING-----------------------turn on led
+
+[INFO] Sending Blockchain Message -----------------Sun Apr 26 13:54:14 2020
+
+[INFO] Blockchain Account Before Balance ----------99419336480000000000
+
+[INFO] Blockchain Registration Begins--------------Sun Apr 26 13:54:14 2020
+[INFO] Blockchain send_MSG sender     = 1
+[INFO] Blockchain send_MSG receiver   = 2
+[INFO] Blockchain send_MSG _message   = turn on led
+[INFO] Blockchain send_MSG grpTicket  = 19a97d3741a7861fbdbb21f21869368f
+[INFO] Blockchain send_MSG Ticket int = 34110737742783727068050793212204889743
+[INFO] Blockchain Signed Transaction Information
+[INFO] r : 40816939374719533662978102562231246359991291133224320617090858355571715385548
+[INFO] r : 40816939374719533662978102562231246359991291133224320617090858355571715385548
+[INFO] s : 28
+[INFO] signature : b"Z=\x91\xa9\xcf8Mq_\x13\xf5\xf73o\x05l\xa7`\x8a\x0f\x94\x10\xaei\x9b\x92\x84\xbc'\xda\xa8\xcc\r\xa6\x11\x81q\xfcz\xd2\xcb\xbc+7\xb2\xc9}\xab\xbd\x00\x94\x11\x87\xdda\xecQ\xfa\xa5Z<\xa5\xb5\xa5\x1c"
+
+[INFO] Sending transaction to SIoTDSC__SendMSG(from:1,to:2, msg:turn on led Nonce : 91604. Gas : 596

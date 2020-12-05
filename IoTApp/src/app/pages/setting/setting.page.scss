@@ -1,0 +1,104 @@
+:host {
+    ion-toolbar {
+        width: 100%;
+        --background: transparent;
+        height: 41px;
+        align-content: center;
+        align-items: center;
+        color: #ffffff;
+        margin-top: 15px;
+    }
+    ion-title {
+        font-size: 34px;
+        font-weight: bolder;
+        height: 41px;
+        line-height: 41px;
+        // width: 110px;
+        color: #FFFFFF;
+        font-family: "S F Pro Display";
+    }
+    ion-header {
+        height: 80px;
+        text-align: center;
+    }
+    .back-icon {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        z-index: 1000;
+    }
+    ion-content {
+        width: 100%;
+        --background: transparent;
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        padding-top: 5%;
+        margin-top: 20px;
+        align-content: space-around;
+    }
+    .main-control-btn-group {
+        margin-top: 3%;
+        // display: flex;
+        // justify-content: center;
+    }
+    .ion-btn {
+        border-radius: 22px;
+        width: 228px;
+        height: 43px;
+        --padding-start: 0px !important;
+        --padding-end: 0px !important;
+        --padding-top: 3%;
+        --background: transparent !important;
+        border: 1px solid rgba(255, 255, 255, 0.61);
+        text-transform: unset !important;
+        // margin-top: 5%;
+    }
+    .Touch-ID-bg-label,
+    .Touch-ID-sm-label {
+        color: #FFFFFF;
+        font-family: 'S F Pro Display';
+        margin-left: 10%;
+    }
+    .Touch-ID-bg-label {
+        font-size: 20px;
+    }
+    .Touch-ID-sm-label {
+        font-size: 14px;
+    }
+    .btn_label {
+        font-size: 20px;
+        height: 31px;
+        color: #FFFFFF;
+        font-family: 'S F Pro Display';
+    }
+    ion-toggle {
+        border: 1px solid rgba(255, 255, 255, 0.61);
+        border-radius: 20px;
+    }
+    ion-footer {
+        // width: 375px;
+        height: 110px;
+        border: 1px solid rgba(255, 255, 255, 0.61);
+        //border-top: 1px solid #FFFFFF;
+        // background-color: #000000;
+    }
+    ion-footer ion-col {
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    .bottom_text {
+        font-size: 15px;
+        height: 22px;
+        // line-height: 41px;
+        color: #FFFFFF;
+        font-family: 'S F Pro Display';
+    }
+    ion-col {
+        line-height: 39px;
+        padding: 0;
+    }
+}

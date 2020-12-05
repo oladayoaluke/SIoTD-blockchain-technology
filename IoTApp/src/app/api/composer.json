@@ -1,0 +1,29 @@
+{
+    "name": "IoTApp",
+    "description": "An application for controling devices using Ethereum, PHP and Ionic 4.",
+    "authors": [
+                {
+                    "name": "Oladayo Luke",
+                    "email": "Oladayo.a.luke@gmail.com"
+                }],
+    
+    "minimum-stability":"dev",
+    "autoload": {
+      "psr-4": {
+        "Ethereum\\": "src/"
+      }
+    },
+    "repositories": [
+      {
+        "type": "git",
+        "url": "https://github.com/digitaldonkey/ethereum-php.git"
+      }
+    ],
+    "require": {
+        "mdanter/ecc": "^0.5.2",
+        "digitaldonkey/ethereum-php": "dev-master",
+        "graze/guzzle-jsonrpc": "~3.0",
+        "datto/json-rpc-http": "dev-master",
+        "truffle-hdwallet-provider": "0.0.6"
+    }
+}

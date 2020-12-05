@@ -1,0 +1,171 @@
+:host {
+    --color: #FFFFFF !important;
+    ion-content {
+        width: 100%;
+        background: url("../../../assets/logo.png") no-repeat 50% 130px !important;
+        // background-size: cover !important;
+        --background: transparent;
+        // --background: radial-gradient(circle at center, #535353 0%, #232323 100%);
+        align-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+ 
+    .ion-btn {
+        border-radius: 22px;
+        width: 228px;
+        height: 43px;
+        text-align: left;
+        // display: flex;
+        flex-direction: row;
+        // --padding-start: 0px !important;
+        --background: transparent !important;
+        //border: 2px solid #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.61);
+        // margin-top: 5%;
+    }
+    .sign_label {
+        font-size: 20px;
+        line-height: 35px;
+        height: 31px;
+        width: 88%;
+        padding-left: 10px;
+        color: #FFFFFF;
+        font-family: "S F Pro Display";
+    }
+    .current_group-label{
+        font-size: 14px;
+        line-height: 31px;
+        height: 31px;
+        color: #FFFFFF;
+        font-family: "S F Pro Display";
+    }
+    .up_btn_label {
+        font-size: 18px;
+        line-height: 41px;
+        height: 31px;
+        color: #FFFFFF;
+        font-family: "S F Pro Display";
+    }
+    .btn-icon {
+        display: flex;
+        // justify-items: flex-start;
+        align-items: flex-start;
+        align-self: flex-end;
+        left: 0px;
+        width: 12%;
+        height: 35px;
+        border-radius: 7px;
+        // background-color: #FFFFFF;
+        float: left;
+    }
+    .main-control-btn-group-first {
+        margin-top: 7%;
+        display: flex;
+        justify-content: center;
+    }
+    .main-control-btn-group {
+        margin-top: 4%;
+        display: flex;
+        justify-content: center;
+    }
+    ion-footer {
+        // width: 375px;
+        height: 79px;
+        border: 1px solid #FFFFFF;
+        // background-color: #000000;
+    }
+    ion-icon {
+        display: flex;
+        align-content: left
+    }
+    ion-header {
+        border: none;
+        --background: none;
+    }
+    .chk-icon {
+        font-size: 30px;
+        color: #FFFFFF;
+        float: left;
+        font-weight: bolder;
+        opacity: 0.8;
+    }
+    .setting-icon {
+        font-size: 30px;
+        font-weight: bolder;
+        color: #FFFFFF;
+        float: right;
+        opacity: 0.8;
+    }
+    .power-icon {
+        font-size: 40px;
+        width: 47px;
+        height: 40px;
+        font-weight: bolder;
+        align-items: center;
+        margin: 0 auto;
+        color: #ffffff99;
+        opacity:0.8;
+    }
+    .active_power_on{
+        color: #FFFFFF;
+        opacity:1;
+
+    }
+    ion-toggle {
+        // width: 81px;
+        // height: 41px;
+        border: 1px solid rgba(255, 255, 255, 0.61);
+        border-radius: 20px;
+        --color: #FFFFFF !important;
+    }
+    .error-label {
+        max-width: 98%;
+        width: 337px;
+        height: 44px;
+        margin-top: 5%;
+        border: 1px solid #ff0000;
+        color: #ff0000;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: "S F Pro Display";
+        justify-items: center;
+        justify-content: center;
+        justify-self: center;
+        display: flex;
+    }
+    .error-label{
+        border-color: transparent;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+    .bottom_text {
+        height: 31px;
+        font-size: 15px;
+        line-height: 39px;
+        color: #FFFFFF;
+        font-family: "S F Pro Display";
+        display: flex;
+        align-content: flex-start;
+    }
+    .footer_text {
+        color: #FFFFFF;
+        font-family: "S F Pro Display";
+        font-size: 15px;
+    }
+
+    ion-row {
+        line-height: 39px;
+        padding: 0;
+    }
+
+    .footer-text-padding{
+        margin-top: 70px;
+        margin-bottom:0px;
+    }
+    ion-col {
+        line-height: 39px;
+        padding: 0;
+    }
+}
