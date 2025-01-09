@@ -1,9 +1,4 @@
-|---------------------------------------------------------------------------------------------------|
-|---------------------------------------------------------------------------------------------------|
-|------------------------------------- IOT SIMULATION DEVICE----------------------------------------|
-|---------------------------------------------------------------------------------------------------|
-|---------------------------------------------------------------------------------------------------|
-
+```bash
 AUTHOR : OLADAYO LUKE
 PUBLICATION DATE: 12/5/2020
 
@@ -121,172 +116,176 @@ Go to SIoTD-blockchain-technology/Documentation
 		5. After bulding the app using "ionic cordova build browser" command, run it with ionic cordova run browser --livereload  --target=chrome --address  localhost --port 8000
 			the app should automatically starts in browswer.
 		6. Use the following credentials to login into the mobile app:
-																	 Username : demo1
-																	 Password : demo
-			
-		
-#How blockchain works!
-1. Ganache-CLI : The local or private blockchain run on ganache on port 7545. The following command is used to start the server.
-				ganache-cli -p 7545 --mnemonic "this is for class project" --networkId 5777 --db ./database --secure -u 0 -u 1 -u 2 -u 3 -u 4 -u 5 -u 6 -u 7 -u 8 -u 9
-				
-				To ensure that ganache-cli server will run, path to its root directory must be include system environmental variable. The command -p stands for port,
-				--mnomonic is like a passphrase for the connection, truffle (provider) uses mnemonic to connect to ganache-cli. These enables to deploy smart contracts
-				to ganache-cli using truffle framework for smart contract development and compilation. Truffle file can be found at  
-				C:\Apps\wamp64\www\project\SIoTD\IoTApp\src\app\api\TESTRPC\SmartContracts\truffle-config.js 
+			 Username : demo1
+			 Password : demo		
+```
 
-2. Smart contract : A key element in Etheruem blockchain is the smart contract technology. Smart contracts a basically set of code or instructions
-					that executes on Etheruem block chain. They are writting in programming languages such as solidty(js), get converted to
-					byte codes, gets sent to blockchain network and has a address that can be used to communucate with it. The smart contract 
-					programming structures has extra functionality that allows smarter programming. An example is the modifiers in solidy. 
-					It basically allows to execute some code before actually getting into the function. For examples, i require a condition to be 
-					true before hitting payable function.
+    
+# How Blockchain Works!
 
-					Once a smart contract is written, the compiler checks for error, and convert it to bytes code. Two elements are needed
-					to fully deply a smart contract. The ABI ( written in JSON format) which are data structures, function signatures, and return values of the smart contract, 
-					the smart contract address and or the bytecode. I found combining visual studio code IDE and Remix web broswer IDE useful in 
-					developing a smart contract. Below links are the resources for smart contract and blockchain development.
-					
-					Visual Studio IDE : https://davidburela.wordpress.com/2016/11/18/configuring-visual-studio-code-for-ethereum-blockchain-development/
-					Truffle and Visual Studio : https://www.trufflesuite.com/tutorials/how-to-install-truffle-and-testrpc-on-windows-for-blockchain-development
-					Truffle Configuration : https://www.trufflesuite.com/docs/truffle/reference/configuration
-					Understaing ABI : https://solidity.readthedocs.io/en/develop/abi-spec.html
-					
-					Signing a Contract Transaction : https://web3py.readthedocs.io/en/stable/web3.eth.account.html#sign-a-contract-transaction
-                    Structure of a Smart Contract : https://solidity.readthedocs.io/en/v0.5.12/structure-of-a-contract.html
-					Examples : https://solidity.readthedocs.io/en/v0.5.3/solidity-by-example.html
-					
-					
-					Deploying Smart Contract :
-											In the terminal, cd to C:\Apps\wamp64\www\project\SIoTD\IoTApp\src\app\api\TESTRPC\SmartContracts root directory at 
-											Run "truffle migrate 2 > ../../../../../../contract.data"
-											The cd back to C:\Apps\wamp64\www\project\SIoTD to run siotd.py
-3. Experiment : 
-				In my experiment, the most significant of success with blockchain was accomplished in python using Ethereum web3 library. I attempted PHP ethereum and i 
-				running into unique problem such as no connection. However, i was able to communicate with ganache-cli to get version number. When i attempt to perform
-				or execute further commands, it got no connection. I migrated to using pure JSON RPC library which entails almost writing my own library. Due to the 
-				limited amount of time on the project, i am limited. I converted BCTrust Blockchain class to PHP to help with encoding function arguments to match up
-				with smart contract ABI, however, i was only able to execute few commands such as creating blockchain Ethereum account, unlocking and locking accounts.
-				It appears that dedicating more time and effort on PHP JSON RPC, can give better productivity. Since, new accounts will need funding to transact,
-				this experiment could have been more successful with PHP if sendRaw_Transaction or send_transaction command works. However, I was able to get this to work
-				using web3 python library
-				
-				
-					
-					
-					
-					
-#-------------------------------------------------------------------------------------------------------------------------|
-#-------------------------------------------------------------------------------------------------------------------------|
-#------------------------------------------- SCENARIOS -------------------------------------------------------------------|
-#-------------------------------------------------------------------------------------------------------------------------|
-#-------------------------------------------------------------------------------------------------------------------------|
-#How to run simulations : 
-CD to C:\Apps\wamp64\www\project\SIoTD and execute command for each node a terminal.
-Example of commands are : 	python siotd.py "A" "1" "2,3" "1" "1" > SScenario1/siotda.data
-							python siotd.py "A" "2" "1" "1" "0" > SScenario1/siotdb.data 
-							
-							Above configured SIoTD to group A with node id 1, recipients node id 2 and 3,
-							category 1, and finally activating it as master(Master will enable immediate
-							transmission, 0 will only listen)
+## 1. Ganache-CLI: Local or Private Blockchain
+Ganache-CLI is used to run a local or private blockchain on port 7545. Use the following command to start the server:
 
-#Scenario 1 Command
+```bash
+ganache-cli -p 7545 --mnemonic "this is for class project" --networkId 5777 --db ./database --secure -u 0 -u 1 -u 2 -u 3 -u 4 -u 5 -u 6 -u 7 -u 8 -u 9
+```
+### Key Details:
+- Port (-p): Specifies the port number.
+- Mnemonic (--mnemonic): A passphrase used to connect to Ganache. Truffle uses this to interact with Ganache-CLI.
+- Truffle Framework: Deploy smart contracts to Ganache using Truffle. Ensure the path to Ganache's root directory is included in the system's environment variables.
+The Truffle configuration file can be found here:
+```bash
+C:\Apps\wamp64\www\project\SIoTD\IoTApp\src\app\api\TESTRPC\SmartContracts\truffle-config.js```
+
+## 2. Smart Contracts: Ethereum Blockchain Core
+Smart contracts are self-executing code written in programming languages like Solidity. They:
+
+- Are compiled into bytecode.
+- Deployed to the blockchain network with an address for interaction.
+- Offer advanced features like modifiers to execute preconditions before a function runs (e.g., requiring a condition to be true before accessing a payable function).
+## Development Steps:
+1. Write and compile the smart contract.
+2. Verify and convert it to bytecode.
+3. Deploy using:
+- ABI (Application Binary Interface): JSON structures detailing data, function signatures, and return values.
+- Bytecode and Smart Contract Address.
+## Recommended Tools:
+- Visual Studio Code IDE: Setup Guide
+- Remix IDE: Browser-based Solidity IDE.
+## Useful Resources:
+- Truffle and Visual Studio Integration
+- Truffle Configuration
+- Understanding ABI
+- Signing Contract Transactions
+- Smart Contract Structure
+- Examples of Solidity
+## Deploying a Smart Contract:
+1. Navigate to the root directory:
+```bash
+cd C:\Apps\wamp64\www\project\SIoTD\IoTApp\src\app\api\TESTRPC\SmartContracts```
+2. Run the deployment command:
+```bash
+truffle migrate 2 > ../../../../../../contract.data```
+3. Return to the project directory and start the application:
+```bash
+cd C:\Apps\wamp64\www\project\SIoTD
+python siotd.py```
+## 3. Experimentation with Blockchain
+During experimentation, Ethereum's Web3 Python library proved most effective. Here are key observations:
+
+- Python Web3 Library: Successfully executed commands and transactions with Ganache-CLI.
+- PHP Integration Challenges:
+- - While basic connections like fetching the version number worked, executing advanced commands (e.g., send_transaction) failed.
+- - Switching to pure JSON-RPC required creating custom libraries, which proved time-intensive.
+## PHP Experimentation:
+- Limited success was achieved with encoding function arguments for the smart contract ABI.
+- Commands like account creation, locking, and unlocking were functional but limited.
+- PHP's JSON-RPC potential requires further exploration, particularly for commands like sendRawTransaction.
+## Summary:
+For effective blockchain development:
+- Python Web3 is recommended for robust functionality.
+- PHP integration shows promise but requires significant time investment for advanced functionality.
+				
+
+# How to Run Simulations
+
+## Running Commands
+Navigate to the project directory:  
+`C:\Apps\wamp64\www\project\SIoTD`  
+
+Run the following commands in separate terminals for each node:  
+```bash
 python siotd.py "A" "1" "2,3" "1" "1" > SScenario1/siotda.data
-python siotd.py "A" "2" "1" "1" "0" > SScenario1/siotdb.data
+python siotd.py "A" "2" "1" "1" "0" > SScenario1/siotdb.data```
 
-#INTENT : 
-The intent of this scenario is to demonstrate that two devices in the same group can
-communicate successfully. In this scenation, device id 1 was able to talk to device id 2.
-As a result, they could blink each other LED.
+### Explanation:
+Group: "A"
+Node ID: "1" or "2"
+Recipients: "2,3" or "1"
+Category: "1"
+Master/Slave: "1" (Master) or "0" (Slave)
 
-#Scenarion 2 Command
+Scenario 1
+Commands:
+
+```bash
+python siotd.py "A" "1" "2,3" "1" "1" > SScenario1/siotda.data
+python siotd.py "A" "2" "1" "1" "0" > SScenario1/siotdb.data```
+
+Intent:
+Demonstrates communication between two devices in the same group. Device 1 communicates with device 2, enabling LED blinking.
+
+Scenario 2
+Commands:
+
+```bash
 python siotd.py "A" "1" "2,3" "1" "1" > SScenario2/siotda.data
 python siotd.py "A" "2" "1,3" "1" "1" > SScenario2/siotdb.data
-python siotd.py "A" "3" "1,2,3" "1" "0" > SScenario2/siotdc.data
+python siotd.py "A" "3" "1,2,3" "1" "0" > SScenario2/siotdc.data```
 
+Intent:
+Demonstrates multiple devices in the same group successfully communicating. Master devices communicate with multiple slaves, ensuring IoT security against rogue devices.
 
-#INTENT : 
-The intent of this scenario is to demonstrate that multiple devices in the same group on
-Ethereum blockchain network can communicate with each other successfully. The scenario
-also demonstrated that master device can communicate with slave multiple slave devices
-as long as they are all on the same group. These demonstrate successfully implemention
-of IoT security against rogue nodes or devices joining the network to conduct malicious
-activities on IoT devices.
+Scenario 3
+Commands:
 
-#Scenarion 3 Command
+```bash
 python siotd.py "A" "1" "2" "1" "1" > SScenario3/siotda.data
 python siotd.py "A" "2" "1" "1" "0" > SScenario3/siotdb.data
-python siotd.py "B" "3" "2,1" "1" "1" > SScenario3/siotdc.data
+python siotd.py "B" "3" "2,1" "1" "1" > SScenario3/siotdc.data```
 
-#INTENT : 
-The intent of this scenario is to demonstrate that device(s) that is not in the
-same group with recipient cannot send a message. In this scenario, SIoTA and SIoTC 
-violated the network rule. In this scenario, SIoTDSAS launched an attack to control 
-on the SIOTDs through socket connection. However, it was unsuccessfully because
-we separated control network from configuration connection. Control code listens to the
-blockchain while configuration is done with socket connection. Attack script was able to
-guess network token but led control was unsuccessfully. Since the token changes, 
-the significance and no configuration data was altered,  penetration can be assumed 
-to be minimal. These demonstrate successfully implemention
-of IoT security against rogue nodes or devices joining the network to conduct malicious
-activities on IoT devices through socket communication. Security was added by separating
-control network from administration network.
+Intent:
+Tests communication restrictions. Devices not in the same group cannot communicate. Demonstrates resistance to attacks like socket-based rogue takeovers by separating control and administration networks.
 
-#Scenarion 4 Command
+Scenario 4
+Commands:
+
+```bash
 python siotd.py "A" "1" "2" "1" "1" > SScenario4/siotda.data
 python siotd.py "A" "2" "1" "1" "0" > SScenario4/siotdb.data
 python siotd.py "B" "3" "4" "1" "1" > SScenario4/siotdc.data
-python siotd.py "B" "4" "3" "1" "0" > SScenario4/siotdd.data
+python siotd.py "B" "4" "3" "1" "0" > SScenario4/siotdd.data```
 
-#INTENT : 
-The intent of this scenario is to demonstrate that device(s) that are in the
-same group with recipient can send a message to each other. In this scenario, SIoTA and SIoTB 
-and SIoTC and SIoTD violated the network no rule. These demonstrate successfully implemention
-of IoT security implementation towards access control of devices in network to perform legitimate
-activities on the network. While communicating, all transactions are recording and can be mined on
-Etheruem blockchain.
+Intent:
+Validates communication between devices in the same group while recording all transactions on the Ethereum blockchain. Demonstrates IoT security and access control.
 
-#Scenarion 5 Command
+Scenario 5
+Commands:
+
+```bash
 python siotd.py "A" "1" "3" "1" "1" > SScenario5/siotda.data
 python siotd.py "A" "2" "4" "1" "1" > SScenario5/siotdb.data
 python siotd.py "B" "3" "1" "1" "1" > SScenario5/siotdc.data
-python siotd.py "B" "4" "2" "1" "0" > SScenario5/siotdd.data
+python siotd.py "B" "4" "2" "1" "0" > SScenario5/siotdd.data```
 
-#INTENT : 
-The intent of this scenario is to demonstrate violation of security policy. The scenario
-is setup to test the same group violation. SIoTA, SIoTB, SIoTC and SIoTD sent message to
-other devices that are not in the same group. As a result, no LED off or blinking was expected
-in this scenerio. SIoTA, SIoTB and SIoTC were configured a master and as a result, they could
-send messages out and got terminated. SIoTD is expected to run as it wasn't configured to
-send messages out and it doesn't receive a message to trigger its transmission. As a result,
-the scenarion file has more data than the others.
+Intent:
+Tests security policy violations. Devices in different groups attempt communication but fail. Demonstrates enforcement of security through Ethereum smart contracts.
 
-#Scenarion 6 Command
-python siotd.py "B" "3" "1" "1" "1" > SScenario5/siotdc.data
-python siotd.py "B" "4" "2" "1" "0" > SScenario5/siotdd.data
+Scenario 6
+Commands:
 
-#INTENT : 
-The intent of this scenario is to test creating blockchain object on the fly.
-Compared to other scenarios, this scenario runs a separated simulated script. 
-The difference is, it only create blockchain object only when needed
-and then destroy's after use. The essence of this
-is to test if Etheruem can maintain and data transmission status even when device is not connect.
-The result, confirmed that devices can create object to connect on the fly. My
-smart contract algorithm allows multiple attempts to add node to the network with
-valid credentials and signatures. If it already, exisit then the request still gets
-a green light. As a result, no error to trigger runtime error on devices compare to
-security violations that are enforced with smart contract modifiers.
+```bash
+python siotd.py "B" "3" "1" "1" "1" > SScenario6/siotdc.data
+python siotd.py "B" "4" "2" "1" "0" > SScenario6/siotdd.data```
 
-#ABSTRACT
-In this project, I demonstrated that the simulated IoT device (SIoTD) is resilient to man-in-the-middle attack, denial of service, and other rogue attacks using blockchain technology and asymmetric encryption. I performed a programming implementation of blockchain based technology for Internet of Things (IoT) devices using PHP, Python and Ionic framework. I designed and developed a control Ionic application to interact with the simulated IoT devices. I also simulated the IoT device by creating script using python. In the Ionic Application (App), PHP API and Elliptic Curve Cryptography (ECC) library was used to create the asymmetric key encryption key pairs and Ethereum blockchain account for SIoT devices. The IoT device simulation script (SIoTDSS) which is the server, was employed to create multiple master and slave SIoT devices. As a result, they took commands from each other within the Ethereum blockchain and through the Ethereum smart contract. The control App server installed and implemented OpenSSL library Secure Sockets Layer (SSL) to enable secure communication. An IoT device simulation attack script (SIoTDSAS) was used to launch a rogue attack against SIoTD device TCP socket connections. In the end, we evaluated the data based on the six scenario results and effectiveness of using Ethereum blockchain network for SIoTD. This project demonstrated that SIoTDs within the blockchain network are not vulnerable to man-in-the-middle attack and all sorts of password attacks that allow an attacker to perform a rogue takeover of IoT devices.
+Intent:
+Tests creating and destroying blockchain objects on the fly. Verifies Ethereum's ability to maintain data transmission even when devices are intermittently connected.
 
-#PROJECT REPORT
-https://drive.google.com/file/d/1QIKxcJsk_0SLO3AS92WML20m0rTLU8bb/view?usp=sharing
+## Abstract
+This project demonstrates the resilience of simulated IoT devices (SIoTD) against attacks like man-in-the-middle and denial of service using blockchain technology and asymmetric encryption. Key highlights include:
 
-#VIDEO
-https://drive.google.com/file/d/1gKTNwLxOOm94RUKuk_B_rjs-kXpvpxCT/view?usp=sharing
+- Implementation of blockchain-based IoT security with Ethereum and smart contracts.
+- Development of a control application using Ionic, PHP, Python, and elliptic curve cryptography.
+- Evaluation of scenarios demonstrating security against rogue attacks.
 
-#FURTHER WORK
-Finished the socket communication between app and SIoTD. Currently, they are connecting but data exchange needs to be more defined for device configuration. Feel free to make contributions and pull up your branch code. Thank you.
+## Project Report
+View Project Report[https://drive.google.com/file/d/1QIKxcJsk_0SLO3AS92WML20m0rTLU8bb/view?usp=sharing]
+
+## Video
+Watch Demonstration Video[https://drive.google.com/file/d/1gKTNwLxOOm94RUKuk_B_rjs-kXpvpxCT/view]
+
+## Further Work
+Continue improving socket communication between the application and SIoTD. While connections are established, data exchange needs further definition for device configuration. Contributions are welcome! Feel free to make pull requests and collaborate.
 
 
 
