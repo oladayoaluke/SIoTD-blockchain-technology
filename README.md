@@ -1,6 +1,9 @@
 ```bash
 AUTHOR : OLADAYO LUKE
 PUBLICATION DATE: 12/5/2020
+SUBJECT: ISEC 0740 - Secure System Analysis & Design
+INSTIUTION: Nova Southeastern University
+Program : Ph.D. in Computer Science
 
 #SCRIPT ARGUMENTS
 [ARG 1] GROUP NAME      : "A"  #For example, A, B or C
