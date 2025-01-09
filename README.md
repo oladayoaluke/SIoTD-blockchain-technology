@@ -133,9 +133,11 @@ ganache-cli -p 7545 --mnemonic "this is for class project" --networkId 5777 --db
 - Port (-p): Specifies the port number.
 - Mnemonic (--mnemonic): A passphrase used to connect to Ganache. Truffle uses this to interact with Ganache-CLI.
 - Truffle Framework: Deploy smart contracts to Ganache using Truffle. Ensure the path to Ganache's root directory is included in the system's environment variables.
+- 
 The Truffle configuration file can be found here:
 ```bash
-C:\Apps\wamp64\www\project\SIoTD\IoTApp\src\app\api\TESTRPC\SmartContracts\truffle-config.js```
+C:\Apps\wamp64\www\project\SIoTD\IoTApp\src\app\api\TESTRPC\SmartContracts\truffle-config.js
+```
 
 ## 2. Smart Contracts: Ethereum Blockchain Core
 Smart contracts are self-executing code written in programming languages like Solidity. They:
@@ -162,17 +164,19 @@ Smart contracts are self-executing code written in programming languages like So
 ## Deploying a Smart Contract:
 1. Navigate to the root directory:
 ```bash
-cd C:\Apps\wamp64\www\project\SIoTD\IoTApp\src\app\api\TESTRPC\SmartContracts```
+cd C:\Apps\wamp64\www\project\SIoTD\IoTApp\src\app\api\TESTRPC\SmartContracts
+```
 2. Run the deployment command:
 ```bash
-truffle migrate 2 > ../../../../../../contract.data```
+truffle migrate 2 > ../../../../../../contract.data
+```
 3. Return to the project directory and start the application:
 ```bash
 cd C:\Apps\wamp64\www\project\SIoTD
-python siotd.py```
+python siotd.py
+```
 ## 3. Experimentation with Blockchain
 During experimentation, Ethereum's Web3 Python library proved most effective. Here are key observations:
-
 - Python Web3 Library: Successfully executed commands and transactions with Ganache-CLI.
 - PHP Integration Challenges:
 - - While basic connections like fetching the version number worked, executing advanced commands (e.g., send_transaction) failed.
@@ -185,18 +189,16 @@ During experimentation, Ethereum's Web3 Python library proved most effective. He
 For effective blockchain development:
 - Python Web3 is recommended for robust functionality.
 - PHP integration shows promise but requires significant time investment for advanced functionality.
-				
-
+  
 # How to Run Simulations
-
-## Running Commands
 Navigate to the project directory:  
 `C:\Apps\wamp64\www\project\SIoTD`  
 
 Run the following commands in separate terminals for each node:  
 ```bash
 python siotd.py "A" "1" "2,3" "1" "1" > SScenario1/siotda.data
-python siotd.py "A" "2" "1" "1" "0" > SScenario1/siotdb.data```
+python siotd.py "A" "2" "1" "1" "0" > SScenario1/siotdb.data
+```
 
 ### Explanation:
 Group: "A"
@@ -210,7 +212,8 @@ Commands:
 
 ```bash
 python siotd.py "A" "1" "2,3" "1" "1" > SScenario1/siotda.data
-python siotd.py "A" "2" "1" "1" "0" > SScenario1/siotdb.data```
+python siotd.py "A" "2" "1" "1" "0" > SScenario1/siotdb.data
+```
 
 Intent:
 Demonstrates communication between two devices in the same group. Device 1 communicates with device 2, enabling LED blinking.
@@ -221,7 +224,8 @@ Commands:
 ```bash
 python siotd.py "A" "1" "2,3" "1" "1" > SScenario2/siotda.data
 python siotd.py "A" "2" "1,3" "1" "1" > SScenario2/siotdb.data
-python siotd.py "A" "3" "1,2,3" "1" "0" > SScenario2/siotdc.data```
+python siotd.py "A" "3" "1,2,3" "1" "0" > SScenario2/siotdc.data
+```
 
 Intent:
 Demonstrates multiple devices in the same group successfully communicating. Master devices communicate with multiple slaves, ensuring IoT security against rogue devices.
@@ -232,7 +236,8 @@ Commands:
 ```bash
 python siotd.py "A" "1" "2" "1" "1" > SScenario3/siotda.data
 python siotd.py "A" "2" "1" "1" "0" > SScenario3/siotdb.data
-python siotd.py "B" "3" "2,1" "1" "1" > SScenario3/siotdc.data```
+python siotd.py "B" "3" "2,1" "1" "1" > SScenario3/siotdc.data
+```
 
 Intent:
 Tests communication restrictions. Devices not in the same group cannot communicate. Demonstrates resistance to attacks like socket-based rogue takeovers by separating control and administration networks.
@@ -244,7 +249,8 @@ Commands:
 python siotd.py "A" "1" "2" "1" "1" > SScenario4/siotda.data
 python siotd.py "A" "2" "1" "1" "0" > SScenario4/siotdb.data
 python siotd.py "B" "3" "4" "1" "1" > SScenario4/siotdc.data
-python siotd.py "B" "4" "3" "1" "0" > SScenario4/siotdd.data```
+python siotd.py "B" "4" "3" "1" "0" > SScenario4/siotdd.data
+```
 
 Intent:
 Validates communication between devices in the same group while recording all transactions on the Ethereum blockchain. Demonstrates IoT security and access control.
@@ -256,7 +262,8 @@ Commands:
 python siotd.py "A" "1" "3" "1" "1" > SScenario5/siotda.data
 python siotd.py "A" "2" "4" "1" "1" > SScenario5/siotdb.data
 python siotd.py "B" "3" "1" "1" "1" > SScenario5/siotdc.data
-python siotd.py "B" "4" "2" "1" "0" > SScenario5/siotdd.data```
+python siotd.py "B" "4" "2" "1" "0" > SScenario5/siotdd.data
+```
 
 Intent:
 Tests security policy violations. Devices in different groups attempt communication but fail. Demonstrates enforcement of security through Ethereum smart contracts.
@@ -266,7 +273,8 @@ Commands:
 
 ```bash
 python siotd.py "B" "3" "1" "1" "1" > SScenario6/siotdc.data
-python siotd.py "B" "4" "2" "1" "0" > SScenario6/siotdd.data```
+python siotd.py "B" "4" "2" "1" "0" > SScenario6/siotdd.data
+```
 
 Intent:
 Tests creating and destroying blockchain objects on the fly. Verifies Ethereum's ability to maintain data transmission even when devices are intermittently connected.
@@ -286,12 +294,3 @@ Watch Demonstration Video[https://drive.google.com/file/d/1gKTNwLxOOm94RUKuk_B_r
 
 ## Further Work
 Continue improving socket communication between the application and SIoTD. While connections are established, data exchange needs further definition for device configuration. Contributions are welcome! Feel free to make pull requests and collaborate.
-
-
-
-
-
-
-
-
-
